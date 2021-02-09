@@ -1,0 +1,387 @@
+<resources>
+
+    <string name="app_name">Real Ista</string>
+    <integer name="pref_default_int_value">0</integer>
+    <integer name="pref_frame_rate_min_value">0</integer>
+    <integer name="pref_frame_rate_max_value">30</integer>
+    <integer name="pref_frame_rate_stepSize">5</integer>
+    <integer name="pref_startbitratevalue_min_value">0</integer>
+    <integer name="pref_startbitratevalue_max_value">2000</integer>
+    <integer name="pref_startbitratevalue_step_size">100</integer>
+    <integer name="pref_answer_time_interval_min_value">15</integer>
+    <integer name="pref_answer_time_interval_max_value">90</integer>
+    <integer name="pref_answer_time_interval_step_size">5</integer>
+    <integer name="pref_disconnect_time_interval_min_value">10</integer>
+    <integer name="pref_disconnect_time_interval_max_value">90</integer>
+    <integer name="pref_disconnect_time_interval_step_size">5</integer>
+    <integer name="pref_dialing_time_interval_min_value">3</integer>
+    <integer name="pref_dialing_time_interval_max_value">10</integer>
+    <integer name="pref_dialing_time_interval_step_size">1</integer>
+
+    <string name="thsisprofile">This is the profile pic. You can later upload your portfolio and other images and videos in the profile section.</string>
+
+
+    <!-- Dialogs strings -->
+    <string name="by_continuing_">Read our <b><u>Terms and Conditions</u></b></string>
+    <string name="hdimagesonly">It will be a good portfolio if you upload 10 best of your HD pictures here. Clients like to see the portfolio before hiring.</string>
+    <string name="this_is_a_good">This is a good place to show yourself. Clients like to see introductory videos. <i>(optional)</i></string>
+    <string name="bio">Write your bio  <i>min 4-5 lines</i></string>
+    <string name="thisisextraa">This is extra information. It will be good if you fill out each and every detail so that you can get in top searches. We give importance and priority to complete profiles.</string>
+
+    <!-- Notification -->
+    <string name="body_measurementss">Body measurements (optional)</string>
+    <string name="professionaljourneystring">Write a professional journey. Use bullet sharp points. Keep it 8–10 lines long. Clients like to know about your professional journey.</string>
+
+    <!-- Errors strings -->
+    <string name="we_respect_the_real_profileimageclient">We respect the real profile picture. It helps developing the trust value between people.</string>
+    <string name="you_can_describe_for_how_long_the_job_will_run_nfor_ex_shoot_will_be_done_in_5_hours">You can describe for how long the job will run.  For ex. Shoot will be done in 5 hours.</string>
+    <string name="no_job_posts_yet">No job posts yet! </string>
+    <string name="client_s_budget">Client\'s budget</string>
+    <string name="hirenowstring">I accept the terms and conditions and would like to hire the artist now.</string>
+    <string name="formalinvitehelp">This will send the formal invitation to the artist. Contract/Booking will start once the artist accepts the contract invitation.</string>
+    <string name="nocontractsfound">You can see all your contracts and invitations here. Currently, no contracts and invitations were found.</string>
+
+    <string name="confirmagaintostartcontract">You are about to accept the contract invitation. Confirm your action again to start the contract.</string>
+    <string name="confirmagaintorejectcontract">Are you sure  you want to reject the contract? Confirm again to continue.</string>
+
+    <string name="dlg_signal_error">Disconnected… Please check your Internet connection!</string>
+
+    <string name="dlg_relogin_wait">You are still connecting.. Please try once more</string>
+
+    <string name="dlg_loading_opponents">Loading opponents…</string>
+    <string name="dlg_retry">Retry</string>
+
+    <string name="dlg_allow">Allow</string>
+
+    <!-- menu -->
+    <string name="notification_title">You have an active call</string>
+    <string name="notification_text">Touch takes you back to the call %1$s</string>
+    <string name="error">Error</string>
+    <string name="error_credentials_empty">Credentials are wrong or empty. You have to set:
+        Application ID, Authentification Key, Authentification Secret, Account Key in constants in App.java
+        and you have to set Sender ID in the string resources to launch application.
+        If you haven\'t them you can register new account and application at https://admin.quickblox.com
+        then put Application credentials from Overview page + Account key from https://admin.quickblox.com/account/settings</string>
+    <string name="error_max_opponents_count">You can select up to %d opponents</string>
+    <string name="sign_up_error">Error creating new user, please try again</string>
+
+    <!-- action bar -->
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="no_connection_error">Connection failed. Please check your internet connection.</string>
+    <string name="no_responce_timeout">No response received within reply timeout</string>
+    <string name="error_permission_video">You should allow Camera permission</string>
+
+    <string name="error_permission_audio">You should allow Microphone permission</string>
+    <string name="loading_users_error">Loading users error. Error</string>
+
+    <string name="permission_unavailable">%s is not available now!</string>
+    <string name="field_name_user_login">User name</string>
+    <string name="field_name_user_fullname">User Full Name</string>
+    <string name="error_name_must_not_contain_special_characters_from_app">%1$s must contain 3 &#8212; %2$s alphanumeric Latin characters without spaces, the first char must be a letter</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_screen_share">Screen share</string>
+    <string name="action_update_opponens_list">Update opponents list</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="action_start_video_call">Video call</string>
+    <string name="action_dialogs_app_info">App Info</string>
+    <string name="actionbar_title_settings">Settings</string>
+    <string name="subtitle_text_logged_in_as">Logged in as %s</string>
+
+    <string name="title_one_user_selected">%s user selected</string>
+
+    <string name="tile_many_users_selected">%s users selected</string>
+
+    <!-- Settings strings. -->
+    <string name="also_on_call">Also on call:</string>
+    <string name="user_list_on_call">User 1, User 2, User 3, User 4, User 5, User 6</string>
+
+    <string name="opponent_pending">Pending</string>
+
+    <string name="opponent_closed">Closed</string>
+    <string name="text_incoming_audio_call">Incoming Audio Call</string>
+    <string name="text_incoming_video_call">Incoming Video Call</string>
+    <string name="text_status_connect">Connect…</string>
+    <string name="text_status_checking">Checking…</string>
+    <string name="text_status_connected">Connected</string>
+
+    <string name="text_status_disconnected">Disconnected</string>
+    <string name="text_status_rejected">Rejected</string>
+    <string name="text_status_no_answer">No answer</string>
+    <string name="text_status_hang_up">Hung up</string>
+
+    <string name="text_status_closed">Closed</string>
+    <string name="text_select_users_to_call">Select users you want to call</string>
+    <string name="text_push_notification_message">"%s is calling you"</string>
+    <string name="title_video_category">Video</string>
+    <string name="title_call_settings_category">Call Settings</string>
+    <string name="pref_frame_rate_key">frame_rate</string>
+
+    <string name="pref_frame_rate_title">Frame Rate (0&#8211;30)</string>
+    <string name="pref_frame_rate_default">0</string>
+    <string name="pref_resolution_key">resolution_preference</string>
+    <string name="pref_resolution_title">Video Format</string>
+
+    <string name="pref_resolution_dlg">Enter RTC local video resolution</string>
+    <string name="pref_resolution_default">-1</string>
+    <string name="pref_startbitratevalue_key">startbitratevalue_preference</string>
+    <string name="pref_startbitratevalue_title">Bandwidth (0&#8211;2000)</string>
+
+    <string name="pref_startbitratevalue_default">0</string>
+    <string name="pref_disable_built_in_aec_key">disable_built_in_aec_preference</string>
+    <string name="pref_disable_built_in_aec_title">Disable built-in AEC</string>
+    <string name="pref_disable_built_in_aec_dlg">Disable built-in AEC</string>
+
+    <string name="pref_disable_built_in_aec_default">false</string>
+    <string name="pref_opensles_key">opensles_preference</string>
+    <string name="pref_opensles_title">Use OpenSL ES for audio playback</string>
+    <string name="pref_opensles_dlg">Use OpenSL ES for audio playback</string>
+    <string name="pref_opensles_default">false</string>
+
+    <!--Call Settings-->
+    <string name="pref_noaudioprocessing_key">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title">Disable audio processing</string>
+    <string name="pref_noaudioprocessing_dlg">Disable audio processing pipeline</string>
+    <string name="pref_noaudioprocessing_default">false</string>
+    <string name="pref_manage_speakerphone_by_proximity_key">manage_speakerphone_by_proximity_preference</string>
+    <string name="pref_manage_speakerphone_by_proximity_title">Manage Speaker Phone by Proximity Sensor</string>
+
+    <string name="pref_manage_speakerphone_by_proximity_dlg">Manage Speaker Phone by Proximity Sensor</string>
+    <string name="pref_manage_speakerphone_by_proximity_summary">Enables managing of Speaker Phone by Proximity Sensor for Audio calls</string>
+    <string name="pref_manage_speakerphone_by_proximity_default">false</string>
+    <string name="pref_answer_time_interval_key">answer_time_interval</string>
+    <string name="pref_answer_time_interval_title">Answer Time Interval (15&#8211;90s)</string>
+    <string name="pref_answer_time_interval_default_value">60</string>
+
+    <string name="pref_disconnect_time_interval_key">disconnect_time_interval</string>
+    <string name="pref_disconnect_time_interval_title">Disconnect Time Interval (10&#8211;90s)</string>
+    <string name="pref_disconnect_time_interval_default_value">10</string>
+    <string name="pref_dialing_time_interval_key">Dialing_time_interval</string>
+    <string name="pref_dialing_time_interval_title">Dialing Time Interval (3&#8211;10s)</string>
+    <string name="pref_dialing_time_interval_default_value">5</string>
+
+    <string name="pref_videocodec_key">videocodec_preference</string>
+    <string name="pref_videocodec_title">Default video codec</string>
+    <string name="pref_videocodec_dlg">Select default video codec</string>
+    <string name="pref_videocodec_default">0</string>
+
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_title">Video codec hardware acceleration</string>
+    <string name="pref_hwcodec_default">true</string>
+
+    <string name="pref_audiocodec_key">pref_audio_codec</string>
+    <string name="pref_audiocodec_title">Default audio codec</string>
+    <string name="pref_audiocodec_def">ISAC</string>
+    <string name="pref_audiocodec_dlg">Select default audio codec</string>
+    <string name="accepted">Accepted</string>
+    <string name="connection_was_lost">Connection is weak</string>
+
+    <string name="opponents">and %s other</string>
+    <string name="opponent">and %s </string>
+    <string name="ringing">Ringing</string>
+    <string name="stop_share">Stop</string>
+
+    <!-- App info -->
+    <string name="appinfo_application_version">Application version:</string>
+    <string name="appinfo_qbsdk_version">QuickBlox SDK version:</string>
+    <string name="appinfo_application_id">Application ID:</string>
+    <string name="appinfo_authorization_key">Authorization key:</string>
+    <string name="appinfo_authorization_secret">Authorization secret:</string>
+    <string name="appinfo_account_key">Account key:</string>
+    <string name="appinfo_api_domain">API domain:</string>
+    <string name="appinfo_chat_domain">Chat domain:</string>
+    <string name="appinfo_title">App Info</string>
+    <string name="appinfo_qa_verion">QA version:</string>
+    <string name="sender_id">990062544729</string>
+    <string name="connection_was_connected">Connected</string>
+    <string name="model_name"><b>Model name</b></string>
+    <string name="sample"><u>Sample</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    login -->
+    <string name="logging">Logging in....</string>
+    <string name="errorloginemail">Email can\'t be empty </string>
+    <string name="errorloginpwd">Password can\'t be empty</string>
+    <string name="errornotclient">Sorry you\'re not a Client.</string>
+    <string name="errornottalent">Sorry You\'re not a Talent.</string>
+    <string name="clientsignupoption">No Client account yet?<b><font fgcolor="#E85F28"> Create one.</font></b></string>
+    <string name="modelsignupoption">No account yet?<b><font fgcolor="#E85F28"> Create one.</font></b></string>
+
+    <!--    signup -->
+    <string name="signup">Registering....</string>
+    <string name="clientloginoption">Already have a Client Account?<b> <font fgcolor="#E85F28">Login</font></b></string>
+    <string name="modelloginoption">Already a member? <b> <font fgcolor="#E85F28">Login</font></b></string>
+
+    <!--    Client successful-->
+    <string name="createaccount">Your account has been successfully created. </string>
+
+    <!--    Signup error-->
+    <string name="errorenterfullname">Please enter your full name</string>
+    <string name="erroremail">Please enter a valid email address</string>
+    <string name="errorpws">Password must contain at least 8 characters </string>
+    <string name="errorinternet">Internet is not available</string>
+    <string name="errornameempty">Name field can\'t be empty</string>
+    <string name="errorconempty">Confirm Password should not be empty</string>
+    <string name="errorconfi">The passwords you entered did\'t match </string>
+
+
+    <!--   createAccount error -->
+    <string name="errorphoneno">Please provide your mobile number</string>
+    <string name="errorphonenovalidation">Please provide valid mobile number</string>
+    <string name="errorCurrentCity">Please provide your current city</string>
+    <string name="errorCurrentState">Please provide your state</string>
+    <string name="errorCurrentCounty">please provide your country</string>
+    <string name="errorimagenotfound">Please select a beautiful HD profile pic.
+    its very important</string>
+
+    <!--    button text-->
+    <string name="ok">ok</string>
+    <string name="letgo">Lets go</string>
+    <string name="login">Login</string>
+    <string name="logout">Log out</string>
+
+    <!--    dialog -->
+    <string name="createprofile">Creating your beautiful portfolio..</string>
+
+    <!--    model portfolio error-->
+    <string name="errolanguage">Please select your languages</string>
+    <string name="errorage">Please provide your age</string>
+    <string name="erroragelimit">Age can not be less than 6</string>
+    <string name="errorprofession"> Please provide your Profession Title</string>
+    <string name="errorbio">Please provide your bio</string>
+    <string name="errorprojourney"> Please provide your professional journey</string>
+    <string name="errorskills">Please provide your skill</string>
+    <string name="errormimage">Minimum age required for job post</string>
+    <string name="erroridealageisreq">Ideal age range is required</string>
+    <string name="errorminage">Min age can not be less than 6</string>
+
+
+    <string name="errormaxage">Maximum age required for job post</string>
+    <string name="errorsyoutubeurl">Please provide your youtube url</string>
+    <string name="erroryoutubeurl_invalid">Please provide Valid youtube url</string>
+    <string name="errormultipleimag">Please provide your 5 beautiful image </string>
+    <string name="erroheightinfeet">Please provide your height in feet</string>
+    <string name="erroheightinInch">Please provide your height in Inches</string>
+    <string name="errorselectcountry">Select the country first</string>
+    <string name="errorselectstatefirst">Select the state first</string>
+
+
+    <!--    client job create error-->
+    <string name="erroragerange">Ideal age range is required.</string>
+
+    <string name="errorheightmeasurement">Ideal height measurement is required.</string>
+    <string name="errorfeetzero">Feet must be greater than zero</string>
+    <string name="errorfeetinch">Inches  can\'t be greater than 12 </string>
+    <string name="errorweight">Ideal weight is required.</string>
+    <string name="errorprojectinfo">Project information is required.</string>
+    <string name="errortypeoflook">Please tell about type of look.</string>
+    <string name="errorrequiredrole">Required for the role.</string>
+    <string name="errorproductname">Product name is required.</string>
+    <string name="errorjobtitle">Job title can\'t be less then 10 characters.</string>
+    <string name="errorjobtitlempty">Job title can\'t be empty</string>
+    <string name="errorjobtype">Select job type first.</string>
+    <string name="errortotalrole">Please tell about total number of Vacancies.</string>
+    <string name="errortotalrolezero">Ideal vacancies is required</string>
+    <string name="errorgendertype">Please select gender type first</string>
+    <string name="errorjobrate">Please tell about the job rate.</string>
+    <string name="errorjobratezero">Ideal job rate is required</string>
+    <string name="errorjobduration">Please tell about the Job duration.</string>
+    <string name="errorcastingcompany">Please tell about the casting company.</string>
+    <string name="errorshootperformationdate">Please tell about the shoot performance dates.</string>
+    <string name="errorshootdateposition">Please check Your Enter dates. </string>
+    <string name="errorjobdescription50char">Job Description can not be less then 50 Characters.</string>
+    <string name="errorjobjobdesciotionisemptry">Job Description can not be empty</string>
+    <string name="errorlocation">Please tell about the shoot/performance location.</string>
+    <string name="errorethinicity">Please select ethnicity.</string>
+    <string name="errorhaircolor">Please select hair color.</string>
+    <string name="erroreeyecolor">Please select eye color.</string>
+    <string name="errorspecialskill">Please select Special skill.</string>
+    <string name="errorhairlength">Please select hair length.</string>
+
+    <!--    ripple effect text for fetch data-->
+    <string name="fetchthebestjobforyou">Finding the best job for you</string>
+    <string name="filterthebesttalent">Filtering the best talent for you</string>
+    <string name="Updatingyouprofile">Updating your beautiful profile...</string>
+    <string name="Createingjobpost">Creating job post.</string>
+
+    <!--    Error on model hirenow -->
+    <string name="erroraccepttermsandcondition">Accept terms and conditions before sending the contract invitation.</string>
+    <string name="erroramountcanbezero">Price must be greater then 0</string>
+    <!--    notified data-->
+    <string name="errorconfirmationendcontract">Accept the terms and condition first</string>
+    <string name="endcontactmsg">Your contract has end.</string>
+    <string name="error_qb_credentials_empty">Credentials of this app is empty please restart again</string>
+
+
+    <!--Chat module Error-->
+    <string name="error_chat_credentails_empty">Credentials are wrong or empty.</string>
+    <string name="login_chat_login_error">Login to Chat error. Please relogin. </string>
+    <string name="you_tube_url">http\\Youtube.com</string>
+
+
+    <!--no internet connection txt-->
+    <string name="nointernetconnection">You are not connected to the internet,
+        Make Sure Wi-Fi is on, Airplane Mode is off and try again</string>
+
+
+    <!--Call Settings-->
+    <!--    <string name="pref_answer_time_interval_key">answer_time_interval</string>-->
+    <!--    <string name="pref_answer_time_interval_title">Answer Time Interval (15&#8211;90s)</string>-->
+    <!--    <string name="pref_answer_time_interval_default_value">60</string>-->
+    <!--    <integer name="pref_answer_time_interval_min_value">15</integer>-->
+    <!--    <integer name="pref_answer_time_interval_max_value">90</integer>-->
+    <!--    <integer name="pref_answer_time_interval_step_size">5</integer>-->
+
+    <!--    <string name="pref_disconnect_time_interval_key">disconnect_time_interval</string>-->
+    <!--    <string name="pref_disconnect_time_interval_title">Disconnect Time Interval (10&#8211;90s)</string>-->
+    <!--    <string name="pref_disconnect_time_interval_default_value">10</string>-->
+    <!--    <integer name="pref_disconnect_time_interval_min_value">10</integer>-->
+    <!--    <integer name="pref_disconnect_time_interval_max_value">90</integer>-->
+    <!--    <integer name="pref_disconnect_time_interval_step_size">5</integer>-->
+
+    <!--    <string name="pref_dialing_time_interval_key">Dialing_time_interval</string>-->
+    <!--    <string name="pref_dialing_time_interval_title">Dialing Time Interval (3&#8211;10s)</string>-->
+    <!--    <string name="pref_dialing_time_interval_default_value">5</string>-->
+    <!--    <integer name="pref_dialing_time_interval_min_value">3</integer>-->
+    <!--    <integer name="pref_dialing_time_interval_max_value">10</integer>-->
+    <!--    <integer name="pref_dialing_time_interval_step_size">1</integer>-->
+
+    <!--    <string name="pref_videocodec_key">videocodec_preference</string>-->
+    <!--    <string name="pref_videocodec_title">Default video codec</string>-->
+    <!--    <string name="pref_videocodec_dlg">Select default video codec</string>-->
+    <!--    <string name="pref_videocodec_default">0</string>-->
+
+    <!--    <string name="pref_hwcodec_key">hwcodec_preference</string>-->
+    <!--    <string name="pref_hwcodec_title">Video codec hardware acceleration</string>-->
+    <!--    <string name="pref_hwcodec_default">true</string>-->
+
+    <string name="pref_value_enabled">Enabled</string>
+    <string name="pref_value_disabled">Disabled</string>
+
+    <string name="pref_room_server_url_key">room_server_url_preference</string>
+    <string name="pref_room_server_url_title">Room server URL.</string>
+    <string name="pref_room_server_url_dlg">Enter a room server URL.</string>
+    <string name="pref_room_server_url_default" translatable="false">https://apprtc.appspot.com</string>
+
+    <string name="pref_displayhud_key">displayhud_preference</string>
+    <string name="pref_displayhud_title">Display call statistics.</string>
+    <string name="pref_displayhud_dlg">Display call statistics.</string>
+    <string name="pref_displayhud_default" translatable="false">false</string>
+    <!--    <string name="pref_audiocodec_key">pref_audio_codec</string>-->
+    <!--    <string name="pref_audiocodec_title">Default audio codec</string>-->
+    <!--    <string name="pref_audiocodec_def">ISAC</string>-->
+    <!--    <string name="pref_audiocodec_dlg">Select default audio codec</string>-->
+    <!--    <string name="pref_version">QuickBlox WebRTC\nBuild version 1.12</string>-->
+    <!--    <string name="btn_screen_capture">screenShot</string>-->
+    <!--    <string name="accepted">Accepted</string>-->
+    <!--    <string name="connection_was_lost">Connection was lost</string>-->
+
+    <!--    <string name="opponents">and %s other</string>-->
+    <!--    <string name="opponent">and %s </string>-->
+    <!--    <string name="ringing">Ringing</string>-->
+    <!--    <string name="stop_share">Stop</string>-->
+    <string name="camera_swicth_failed">\"Failed switch camera\"</string>
+
+
+</resources>

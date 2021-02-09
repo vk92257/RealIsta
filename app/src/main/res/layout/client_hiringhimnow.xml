@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verylightgray2"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/progModelCreate"
+        layout="@layout/modelsfinishregistration"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layouthire"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            fontPath="fonts/PTSerif-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hire now"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="back"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@android:color/black" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/verylightgray2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="4dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="true">
+
+                <EditText
+                    android:id="@+id/invitetext"
+                    fontPath="fonts/helreg.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="start"
+                    android:hint="Hi, I would like to hire you for the position..."
+                    android:inputType="textMultiLine"
+                    android:minLines="6"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/darker_gray"
+                    android:textColorHint="@android:color/darker_gray" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                fontPath="fonts/OpenSans-Semibold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Final job price"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_attach_money_black_24dp"
+                    android:tint="@color/green" />
+
+                <EditText
+                    android:id="@+id/jobrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/verylightgray"
+                    android:hint="5000"
+                    android:inputType="number"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+            <RadioButton
+                android:id="@+id/accepttermsradio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center|start"
+                android:text="@string/hirenowstring" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/hireartist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="2dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    fontPath="fonts/gotham.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/green"
+                    android:onClick="hireNow"
+                    android:text="Send contract request"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/formalinvitehelp"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+</LinearLayout>

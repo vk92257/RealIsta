@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/title"
+            fontPath="fonts/PTSerif-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Portfolio"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/optionsmenu"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_more_vert_black_24dp" />
+
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:ignore="MissingPrefix">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:weightSum="10">
+
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="top|start">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/profileimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/boss"
+                        app:civ_border="false"
+                        app:civ_border_color="@android:color/transparent"
+                        app:civ_border_width="0dp"
+                        app:civ_circle_color="@color/white"
+                        app:civ_shadow="false" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="15dp">
+
+                    <TextView
+                        android:id="@+id/name"
+                        fontPath="fonts/gothambold.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_instagram_verified_badge_png"
+                        android:drawablePadding="10dp"
+                        android:gravity="center|start"
+                        android:maxLines="1"
+                        android:text="Full Name"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/professiontitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center|start"
+                        android:maxLines="2"
+                        android:text="Professional Title"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:drawableStart="@drawable/ic_location_on_black_24dp"
+                        android:drawablePadding="2dp"
+                        android:drawableTint="@color/black"
+                        android:gravity="center|start"
+                        android:maxLines="3"
+                        android:text="Location"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/portfolioview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/portfoliotv"
+                            fontPath="fonts/gothambold.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="center|start"
+                            android:singleLine="true"
+                            android:text="PORTFOLIO "
+                            android:textAllCaps="true"
+                            android:textColor="@color/green"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/underlineportfolioview"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/green" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/galleryview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/gallerytv"
+                            fontPath="fonts/gothambold.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="center|start"
+                            android:singleLine="true"
+                            android:text="GALLERY "
+                            android:textAllCaps="true"
+                            android:textColor="@color/green"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:id="@+id/underlinegalleryview"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/green" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/edit"
+                            fontPath="fonts/gothambold.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:drawableStart="@drawable/ic_edit_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="@color/button_end_call_normal_color"
+                            android:text="EDIT "
+                            android:textAllCaps="true"
+                            android:textColor="@color/button_end_call_normal_color"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.3"
+                android:background="@android:color/darker_gray" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/portfolioll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="30dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:orientation="horizontal"
+                           android:layout_height="wrap_content">
+                           <TextView
+
+                               android:layout_weight="9.5"
+                               android:visibility="gone"
+                               android:id="@+id/youtube_video_title"
+                               fontPath="fonts/gothambold.otf"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:gravity="center|start"
+                               android:text="Youtube video"
+                               android:textColor="@color/black"
+                               android:textSize="16sp"
+                               android:textStyle="bold" />
+                           <ImageView
+                               android:visibility="gone"
+                               android:id="@+id/youtube_back"
+                               android:layout_width="20dp"
+                               android:padding="1dp"
+                               android:layout_height="20dp"
+                               android:src="@drawable/ic_back"/>
+                       </LinearLayout>
+
+                      <FrameLayout
+                          android:visibility="gone"
+                          android:id="@+id/youtube_video"
+                          android:layout_width="match_parent"
+                          android:layout_marginTop="10dp"
+                          android:layout_height="200dp">
+
+                          <ImageView
+                              android:id="@+id/model_video"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"/>
+                          <ImageView
+                              android:layout_gravity="center"
+                              android:id="@+id/play_button"
+                              android:src="@drawable/ic_youtube"
+                              android:layout_width="70dp"
+                              android:layout_height="70dp"/>
+
+
+                      </FrameLayout>
+
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/youtubevideoShow"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="5dp"
+                            android:paddingStart="8dp"
+                            android:paddingBottom="20dp"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/green"
+                            android:layout_height="wrap_content"
+                            android:text="@string/you_tube_url"
+                            android:textSize="12dp"
+                           />
+
+                        <TextView
+                            fontPath="fonts/gothambold.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:text="Preview"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_marginTop="@dimen/padding_10"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            fontPath="fonts/gothambold.otf"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center|start"
+                            android:text="Professional Journey"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/professionaljourney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center|start"
+                            android:lineSpacingExtra="4dp"
+                            android:text="Professional Journey"
+                            android:textColor="@color/gray1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/readmoreprofessional"
+                            fontPath="fonts/OpenSans-Bold.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:text="See more"
+                            android:visibility="gone"
+                            android:textColor="@color/green"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            fontPath="fonts/gothambold.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center|start"
+                            android:text="Your bio"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/bio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center|start"
+                            android:lineSpacingExtra="4dp"
+                            android:text="Your bio"
+                            android:textColor="@color/gray1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/readmorebio"
+                            fontPath="fonts/OpenSans-Bold.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:text="See more"
+                            android:textColor="@color/green"
+                            android:textSize="16sp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            fontPath="fonts/gothambold.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center|start"
+                            android:text="Ideal age for role offers"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/idealageforrolemodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center|start"
+                            android:lineSpacingExtra="3dp"
+                            android:text="Ideal age for role model"
+                            android:textColor="@color/gray1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            fontPath="fonts/gothambold.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center|start"
+                            android:text="Skills"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/skills"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center|start"
+                            android:lineSpacingExtra="4dp"
+                            android:text="Skills"
+                            android:textColor="@color/gray1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            fontPath="fonts/gothambold.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center|start"
+                            android:text="Languages"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/languages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center|start"
+                            android:lineSpacingExtra="4dp"
+                            android:text="Languages"
+                            android:textColor="@color/gray1"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:alpha="0.3"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                fontPath="fonts/gothambold.otf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:text="Body Appearance"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/bodyappearance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center|start"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Body Appearance"
+                                android:textColor="@color/gray1"
+                                android:textSize="16sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/height"
+                                        fontPath="fonts/gothambold.otf"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center|start"
+                                        android:text="Height "
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center|start"
+                                        android:text="Height"
+                                        android:textColor="@color/gray1"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/chest"
+                                        fontPath="fonts/gothambold.otf"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center|start"
+                                        android:text="Chest "
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center|start"
+                                        android:text="Chest"
+                                        android:textColor="@color/gray1"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/waist"
+                                        fontPath="fonts/gothambold.otf"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center|start"
+                                        android:text="Waist "
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center|start"
+                                        android:text="Waist"
+                                        android:textColor="@color/gray1"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/hip"
+                                        fontPath="fonts/gothambold.otf"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center|start"
+                                        android:text="Hip "
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center|start"
+                                        android:text="Hip"
+                                        android:textColor="@color/gray1"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                fontPath="fonts/gothambold.otf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:gravity="center|start"
+                                android:text="Ethnic Appearance"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/ethnicity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center|start"
+                                android:lineSpacingExtra="4dp"
+                                android:text="Ethnic Appearance"
+                                android:textColor="@color/gray1"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="50dp"
+                        android:alpha="0.3"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/galleryll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="70dp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

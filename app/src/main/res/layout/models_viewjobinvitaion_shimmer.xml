@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/green"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        fontPath="fonts/gotham.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4dp"
+                        android:background="@drawable/skeleton"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/invitationmessage"
+                        fontPath="fonts/librereg.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="4dp"
+                        android:background="@drawable/skeleton"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/castingcompany"
+                        fontPath="fonts/OpenSans-Bold.ttf"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                       android:background="@color/green"
+                        android:textColor="@color/green"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/vacancies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/skeleton"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                       android:background="@drawable/skeleton"
+                        android:textColor="@color/lighttextgray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/jobtype"
+                        fontPath="fonts/gotham.ttf"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4dp"
+                        android:background="@drawable/skeleton"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        fontPath="fonts/hellight.ttf"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="4dp"
+                        android:background="@drawable/skeleton"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        fontPath="fonts/hellight.ttf"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:background="@drawable/skeleton"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        fontPath="fonts/gotham.ttf"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/skeleton"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        fontPath="fonts/hellight.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="4dp"
+                        android:background="@drawable/skeleton"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingEnd="10dp">
+
+                            <TextView
+                                android:id="@+id/jobduration"
+                                fontPath="fonts/gotham.ttf"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                                android:maxLines="3"
+                               android:background="@drawable/skeleton"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                fontPath="fonts/hellight.ttf"
+                                android:layout_marginTop="@dimen/padding_10"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+                               android:background="@drawable/skeleton"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/jobrate"
+                                fontPath="fonts/gotham.ttf"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|start"
+
+                                android:background="@color/green"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shootingdates"
+                            fontPath="fonts/gotham.ttf"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:background="@drawable/skeleton"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            fontPath="fonts/hellight.ttf"
+                            android:layout_marginTop="@dimen/padding_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:background="@drawable/skeleton"
+                            android:text="Shooting dates"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shootinglocation"
+                            fontPath="fonts/gotham.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:background="@drawable/skeleton"
+                            android:text="Shooting location "
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            fontPath="fonts/hellight.ttf"
+                            android:layout_marginTop="@dimen/padding_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:background="@drawable/skeleton"
+                            android:text="Shooting location"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/attachments_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        fontPath="fonts/gotham.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/skeleton"
+                        android:text="Attachments"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp" />
+
+                    <ListView
+                        android:id="@+id/attachments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/verylightgray"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/hiredtext"
+                fontPath="fonts/OpenSans-SemiboldItalic.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="You are already hired for the contract"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/reject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="5"
+                android:elevation="2dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="2dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray1"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/accept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="5"
+                android:elevation="2dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="2dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_dark"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

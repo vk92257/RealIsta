@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.quickblox.videochat.webrtc.view.QBRTCSurfaceView
+      android:visibility="visible"
+        android:id="@+id/opponentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <com.quickblox.videochat.webrtc.view.QBRTCSurfaceView
+            android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/localView"
+        android:layout_alignParentEnd="true"
+        android:layout_width="100dp"
+        android:layout_height="130dp" />
+
+</FrameLayout>
+<!--    android:background="#59777777"-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/talking">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/callername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:text="User Name"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/callTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/callername"
+                android:layout_marginStart="20dp"
+                android:text=""
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:id="@+id/answerlayout"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:padding="17dp"
+                    android:id="@+id/answerCall"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:background="@drawable/shape_oval_white_green"
+                    app:tint="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/rejectcall"
+                    android:padding="13dp"
+                    android:src="@drawable/ic_phone_hangup"
+                    android:background="@drawable/shape_oval_red"
+                    android:layout_centerInParent="true"
+                    app:tint="@color/white" />
+<!--               -->
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="#33000000"
+        android:id="@+id/CallerLayout"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/speaker"
+                android:layout_toLeftOf="@+id/Endcall"
+                android:layout_toStartOf="@+id/Endcall"
+                android:tint="@color/white"
+                android:layout_marginEnd="20dp"
+                android:padding="16dp"
+                android:src="@drawable/ic_sound"
+                android:layout_marginStart="20dp"
+                />
+
+            <ToggleButton
+                android:textOn="@null"
+                android:textOff="@null"
+                android:layout_toLeftOf="@+id/Endcall"
+                android:layout_toStartOf="@+id/Endcall"
+                android:layout_marginEnd="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/toggle_speaker"
+                android:background="@drawable/call_speaker_toggle_background"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/mic"
+                android:padding="17dp"
+                android:src="@drawable/ic_mic"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/Endcall"
+                app:tint="@color/white" />
+<!--            android:src="@drawable/ic_mic_black_24dp"-->
+
+            <ToggleButton
+                android:textOn="@null"
+                android:textOff="@null"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/toggle_mic"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/Endcall"
+                android:background="@drawable/call_mic_toggle_background"/>
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/Endcall"
+                android:padding="10dp"
+                 android:src="@drawable/ic_phone_hangup"
+                android:tint="@color/white"
+                android:background="@drawable/shape_oval_red"
+              />
+<!--            android:src="@drawable/ic_call_end_black_24dp"-->
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/video"
+                android:layout_alignParentStart="true"
+                android:tint="@color/white"
+                android:padding="16dp"
+                android:src="@drawable/ic_videocam_black_24dp"
+                />
+
+            <ToggleButton
+                android:textOn="@null"
+                android:textOff="@null"
+                android:layout_alignParentStart="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/toggle_camera"
+                android:background="@drawable/call_cam_toggle_background"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/camera_switch"
+                android:layout_alignParentRight="true"
+                android:tint="@color/white"
+                android:padding="15dp"
+                android:src="@drawable/ic_camera_front"
+                android:layout_marginStart="20dp"
+                />
+
+            <ToggleButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/toggle_camera_switch"
+                android:layout_alignParentEnd="true"
+                android:textOn="@null"
+                android:textOff="@null"
+                android:background="@drawable/call_toggle_cam_toggle_background"
+                android:layout_marginStart="20dp"
+                />
+
+<!--            android:src="@drawable/ic_videocam_black_24dp"-->
+
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+
+    <ImageView
+            android:id="@+id/talking"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/user_test"
+            android:visibility="visible" />
+
+</RelativeLayout>

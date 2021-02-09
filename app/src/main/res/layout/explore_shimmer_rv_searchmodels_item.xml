@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:elevation="2dp"
+    app:cardElevation="2dp"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingTop="25dp"
+
+            android:weightSum="10">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="top|start">
+
+                <ImageView
+                    android:id="@+id/profileimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/skeleton"
+                    app:civ_border="false"
+                    android:alpha="0.3"
+                    app:civ_border_color="@android:color/transparent"
+                    app:civ_border_width="0dp"
+                    app:civ_circle_color="@color/white"
+                    app:civ_shadow="false" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="10">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="top|start">
+
+                <ImageView
+                    android:id="@+id/profileimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/skeleton"
+                    app:civ_border="false"
+                    android:alpha="0.3"
+                    app:civ_border_color="@android:color/transparent"
+                    app:civ_border_width="0dp"
+                    app:civ_circle_color="@color/white"
+                    app:civ_shadow="false" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="10">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="top|start">
+
+                <ImageView
+                    android:id="@+id/profileimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/skeleton"
+                    app:civ_border="false"
+                    android:alpha="0.3"
+                    app:civ_border_color="@android:color/transparent"
+                    app:civ_border_width="0dp"
+                    app:civ_circle_color="@color/white"
+                    app:civ_shadow="false" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="10">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="top|start">
+
+                <ImageView
+                    android:id="@+id/profileimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/skeleton"
+                    app:civ_border="false"
+                    android:alpha="0.3"
+                    app:civ_border_color="@android:color/transparent"
+                    app:civ_border_width="0dp"
+                    app:civ_circle_color="@color/white"
+                    app:civ_shadow="false" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="top|start">
+
+            <ImageView
+                android:id="@+id/profileimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skeleton"
+                app:civ_border="false"
+                android:alpha="0.3"
+                app:civ_border_color="@android:color/transparent"
+                app:civ_border_width="0dp"
+                app:civ_circle_color="@color/white"
+                app:civ_shadow="false" />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="10">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="top|start">
+
+                <ImageView
+                    android:id="@+id/profileimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/skeleton"
+                    app:civ_border="false"
+                    android:alpha="0.3"
+                    app:civ_border_color="@android:color/transparent"
+                    app:civ_border_width="0dp"
+                    app:civ_circle_color="@color/white"
+                    app:civ_shadow="false" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

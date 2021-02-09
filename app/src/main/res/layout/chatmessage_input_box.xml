@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/verylightgray"
+    android:orientation="horizontal"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    >
+
+    <FrameLayout
+        android:id="@+id/sendbtn_attachment"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:onClick="sendAttachment">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/ic_file"
+            />
+
+    </FrameLayout>
+
+            <EditText
+                android:id="@+id/messageArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/round_border"
+                android:maxLines="4"
+                android:minHeight="20dp"
+                android:paddingStart="10dip"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:hint="Type message...."
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_toLeftOf="@id/sendbtn_fl"
+                android:layout_toRightOf="@id/sendbtn_attachment"
+
+
+                />
+
+            <FrameLayout
+                android:id="@+id/sendbtn_fl"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:onClick="sendMsssageButtonClicked">
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_send"
+                    android:tint="@color/black"/>
+
+
+            </FrameLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/graysblack">
+    <FrameLayout
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="@dimen/padding_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@drawable/model6"
+            app:civ_border_width="7dp"
+            app:civ_shadow_color="@android:color/darker_gray"
+            app:civ_shadow_radius="15" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_image">
+
+        <TextView
+            android:id="@+id/username"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sushil chhetri"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/location_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="india,panchkula,haryana"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_location_on_black_24dp"
+            android:drawableTint="@color/white"
+            android:drawablePadding="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/mobile_no"
+        fontPath="fonts/librereg.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_smartphone"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:hint="983736XXXXXX"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/text_color_dark_grey"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/name_layout"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        fontPath="fonts/librereg.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:drawableLeft="@drawable/ic_at"
+        android:drawablePadding="17dp"
+        android:drawableTint="@color/white"
+        android:hint="abcd@gmail.com"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/text_color_dark_grey"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/mobile_no"
+        />
+    <TextView
+        android:id="@+id/gender_id"
+        fontPath="fonts/librereg.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_at"
+        android:drawablePadding="17dp"
+        android:drawableTint="@color/white"
+        android:hint="Male/Female"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/text_color_dark_grey"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/email"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

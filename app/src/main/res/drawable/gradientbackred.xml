@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="0"
+        android:endColor="@color/colorAccent"
+        android:startColor="@color/button_end_call_normal_color"
+        android:type="linear" />
+    <corners android:bottomRightRadius="15dp" />
+</shape>

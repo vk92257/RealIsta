@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_alignParentEnd="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/padding_10"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+      <TextView
+          android:id="@+id/message_user"
+          android:textStyle="bold"
+          android:textSize="20sp"
+          android:layout_width="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_height="wrap_content"/>
+      <LinearLayout
+          android:layout_alignParentEnd="true"
+          android:id="@+id/ll_message_body_container"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/outgoing_message_background"
+          android:minWidth="125dp"
+          android:minHeight="44dp"
+          android:orientation="vertical"
+          android:paddingLeft="8dp"
+          android:paddingTop="5dp"
+          android:paddingRight="5dp"
+          android:layout_marginEnd="10dp"
+          android:visibility="gone">
+          <TextView
+              android:id="@+id/sendmessage_content"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:maxWidth="199dp"
+              android:paddingTop="3dp"
+              android:textColor="@color/white"
+              android:textSize="15sp"
+              tools:text="Alexparvus..." />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="12dp"
+              android:orientation="horizontal"
+              android:layout_marginBottom="3dp"
+              android:layout_alignParentBottom="true"
+              android:gravity="end"
+              >
+
+          <TextView
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentBottom="true"
+              android:id="@+id/txt_time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="20:00"
+              android:textSize="8sp"
+              android:textAlignment="viewEnd"
+              android:layout_marginBottom="3dp"
+              android:textColor="@color/gray_light"
+              />
+              <ImageView
+                  android:layout_marginLeft="5dp"
+                  android:id="@+id/iv_message_status"
+                  android:layout_width="20dp"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_status_sent"/>
+          </LinearLayout>
+      </LinearLayout>
+      <RelativeLayout
+          android:layout_alignParentEnd="true"
+          android:id="@+id/ll_attachment_body_container"
+          android:layout_width="200dp"
+          android:layout_height="200dp"
+          android:background="@drawable/outgoing_message_background"
+          android:orientation="vertical"
+          android:paddingLeft="5dp"
+          android:paddingTop="5dp"
+          android:paddingRight="5dp"
+          android:layout_marginEnd="5dp"
+          android:layout_below="@id/ll_message_body_container"
+          android:visibility="gone">
+
+          <ImageView
+              android:id="@+id/attachment_content"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_above="@+id/timemarkll"
+              android:layout_marginTop="3dp"
+              android:layout_marginBottom="3dp"
+              android:background="@color/white"
+              android:minWidth="200dp"
+              android:minHeight="200dp"
+              android:paddingTop="3dp"
+              android:paddingBottom="3dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/ic_image_placeholder" />
+          <ProgressBar
+              android:id="@+id/progress_image"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              />
+          <ImageView
+              android:id="@+id/play_button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_play_button"
+              android:layout_centerInParent="true"
+              android:visibility="gone"
+              />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="12dp"
+              android:orientation="horizontal"
+              android:layout_marginBottom="3dp"
+              android:layout_alignParentBottom="true"
+              android:id="@+id/timemarkll"
+              android:gravity="end"
+              >
+
+          <TextView
+            android:layout_alignParentEnd="true"
+              android:layout_alignParentBottom="true"
+              android:id="@+id/att_time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="20:00"
+              android:textSize="8sp"
+              android:textAlignment="viewEnd"
+              android:layout_marginBottom="3dp"
+              android:textColor="@color/gray_light"
+
+
+              />
+              <ImageView
+                  android:layout_marginLeft="5dp"
+                  android:id="@+id/iv_messageattch_status"
+                  android:layout_width="20dp"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_status_sent"/>
+          </LinearLayout>
+      </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_alignParentEnd="true"
+        android:id="@+id/ll_doc_body_container"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:background="@drawable/outgoing_message_background"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@id/ll_attachment_body_container"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/doc_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/doctimemarkll"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/white"
+            android:minWidth="200dp"
+            android:minHeight="100dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:src="@drawable/ic_file_placeholder" />
+        <ProgressBar
+            android:id="@+id/progress_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:id="@+id/download_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_button"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:background="@color/black"
+            android:layout_above="@+id/doctimemarkll"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_docimg"
+                android:layout_weight="1"
+
+                />
+            <TextView
+                android:id="@+id/docname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Real Ista.pdf"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/docsize"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="20 mb"
+                android:textSize="8dp"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:gravity="center"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/doctimemarkll"
+            android:gravity="end"
+            >
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/doc_att_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20:00"
+                android:textSize="8sp"
+                android:textAlignment="viewEnd"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/gray_light"
+
+
+                />
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/iv_messagedoc_status"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_status_sent"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+  </RelativeLayout>
+

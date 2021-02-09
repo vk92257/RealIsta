@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="videoResolutions">
+        <item>Default</item>
+        <item>HD (1280 x 720)</item>
+        <item>VGA (640 x 480)</item>
+        <item>QVGA (320 x 240)</item>
+    </string-array>
+
+    <string-array name="videoResolutionsValues">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="videoCodecs">
+        <item>VP8</item>
+        <item>VP9</item>
+        <item>H264</item>
+    </string-array>
+
+    <string-array name="videoCodecsValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="audioCodecs">
+        <item>ISAC</item>
+        <item>opus</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>Arabic</item>
+        <item>Amharic</item>
+        <item>Burmese</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Egyptian Arabic</item>
+        <item>French</item>
+        <item>Filipino</item>
+        <item>Hindi</item>
+        <item>Italian</item>
+        <item>Iranian Persian</item>
+        <item>Indonesian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Mandarin Chinese</item>
+        <item>Nigerian Pidgin</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Romanian</item>
+        <item>Swahili</item>
+        <item>Standard German</item>
+        <item>Telugu</item>
+        <item>Turkish</item>
+        <item>Thai</item>
+        <item>Urdu</item>
+        <item>Ukrainian</item>
+        <item>Vietnamese</item>
+
+
+
+    </string-array>
+
+    <string-array name="skill">
+        <item>Female Model</item>
+        <item>Male Model</item>
+        <item>Photography</item>
+        <item>Makeup Artist</item>
+        <item>Hair Stylist</item>
+        <item>Wardrobe Partner</item>
+        <item>Clothing Designer</item>
+        <item>Bikes</item>
+        <item>Cars</item>
+        <item>Stunts</item>
+        <item>Photo editor</item>
+        <item>Video editor</item>
+        <item>Horse riding</item>
+        <item>General Sports</item>
+        <item>Acting</item>
+        <item>Role play</item>
+        <item>Swimming</item>
+        <item>Singing</item>
+        <item>Dancing</item>
+        <item>Ramp</item>
+        <item>Host</item>
+        <item>Standup</item>
+        <item>Comedy</item>
+        <item>Theatre</item>
+        <item>Gymnast</item>
+        <item>Action</item>
+    </string-array>
+
+
+    <string-array name="bodytype">
+        <item>Average</item>
+        <item>Slim</item>
+        <item>Athletic</item>
+        <item>Muscular</item>
+        <item>Plus size</item>
+        <item>Curvy</item>
+        <item>Tall</item>
+        <item>Short</item>
+    </string-array>
+
+    <string-array name="Ethnicity">
+        <item>Indian</item>
+        <item>Asian</item>
+        <item>Southeast asian</item>
+        <item>Middle eastern</item>
+        <item>African American</item>
+        <item>Caucasian</item>
+        <item>Hispanic</item>
+        <item>Mixed race</item>
+        <item>African descent</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="haircolor">
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Blonde</item>
+        <item>Red</item>
+        <item>White</item>
+        <item>Dyed hair color</item>
+        <item>Any</item>
+    </string-array>
+
+    <string-array name="eyecolor">
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Gray</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Any</item>
+    </string-array>
+
+    <string-array name="hairlength">
+        <item>Neck length</item>
+        <item>Shoulder length</item>
+        <item>Armpit length</item>
+        <item>Mid back length</item>
+        <item>Waist length</item>
+        <item>Hip length</item>
+        <item>Knee length</item>
+        <item>Ankle length</item>
+        <item>Shaved Head</item>
+        <item>Pixy Head</item>
+        <item>Dyed Hair color</item>
+    </string-array>
+
+    <string-array name="jobtype">
+        <item>Still photoshoot</item>
+        <item>video shoot</item>
+        <item>Both</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+    </string-array>
+</resources>

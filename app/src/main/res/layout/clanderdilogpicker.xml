@@ -1,0 +1,12 @@
+<com.applandeo.materialcalendarview.CalendarView
+    android:id="@+id/calendarview_picker"
+    android:layout_width="match_parent"
+    android:layout_height="380dp"
+    app:headerColor="@color/white"
+    app:type="one_day_picker"
+
+    android:divider="@android:color/transparent"
+    app:selectionColor="@color/black"
+    app:todayLabelColor="@color/colorPrimaryDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

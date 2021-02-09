@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.quickblox.sample.chat.java.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <application
+        android:name=".Applicationclass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".WebView_activity"
+            android:theme="@style/Theme.Design.NoActionBar" ></activity>
+        <activity
+            android:name=".NoInternetConnection_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".clientsprofile.clients_activity.ClientDetailShow_activity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            />
+        <activity
+            android:name=".chatModule.AttachmentVideoActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".chatModule.View_ChatVideo_fullScreen" />
+        <activity
+            android:name=".chatModule.View_ChatImage_fullScreen"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name="com.flipkart.youtubeview.activity.YouTubeActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".Chat_module.ChatMessageActivity" />
+        <activity android:name=".Chat_module.ListUserActivity" />
+        <activity android:name=".Chat_module.ChatDialogActivity" />
+        <activity android:name=".Chat_module.SignupDemo_quickblox" />
+        <activity android:name=".clientsprofile.clients_activity.Client_profile_update_activity" /> <!-- <receiver -->
+        <!-- android:name=".Utility.NetworkChangeReceiver" -->
+        <!-- android:label="NetworkChangeReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity android:name=".Complete_checkAcitivity" />
+        <activity android:name=".clientsprofile.clients_activity.FetchAll_ClientData" />
+        <activity android:name=".modelsprofile.models_activity.FetchAll_ModelData" />
+        <activity android:name=".modelsprofile.models_selectoptions.Languages_selectActivity" />
+        <activity android:name=".modelsprofile.models_selectoptions.ListShowActivity" />
+        <activity android:name=".landingpage" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".clientsprofile.clients_activity.Clients_LoginActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".clientsprofile.clients_activity.Clients_SignUpActivity"
+            android:noHistory="true" />
+        <activity android:name=".clientsprofile.clients_activity.Clients_CreateAccount" />
+        <activity android:name=".clientsprofile.clients_activity.Clients_ViewFullJobDetails" />
+        <activity android:name=".clientsprofile.clients_activity.Clients_ViewTheirFullJobDetailsAndProposals" />
+        <activity android:name=".modelsprofile.models_activity.Models_createportfolioActivity" />
+        <activity android:name=".modelsprofile.models_activity.Model_HomeActivity" />
+        <activity android:name=".clientsprofile.clients_activity.Clients_Home" />
+        <activity android:name=".modelsprofile.models_activity.GalleryImageFullshow" />
+        <activity android:name=".clientsprofile.clients_activity.Clients_CreateJobPost" />
+        <activity android:name=".modelsprofile.models_activity.ModelEditProfile_Activity" />
+        <activity android:name=".modelsprofile.models_activity.Model_SignUpActivity" />
+        <activity android:name=".modelsprofile.models_activity.Models_LoginActivity" />
+        <activity android:name=".modelsprofile.models_activity.Single_JobDetail_Activity" />
+        <activity android:name=".modelsprofile.models_activity.Models_submitProposal" />
+        <activity android:name=".modelsprofile.models_activity.Models_ViewJobInvitation" />
+        <activity android:name=".modelsprofile.models_activity.Contracts_Accept_reject" />
+        <activity android:name=".clientsprofile.clients_activity.Clients_SelectCriteriaExploreModels" />
+        <activity android:name=".clientsprofile.clients_activity.Clients_HiringNowActivity" />
+        <activity android:name=".modelsprofile.models_activity.Model_Select_Criteria" />
+        <activity android:name=".clientsprofile.clients_activity.View_proposal_userProfile" />
+        <activity android:name=".clientsprofile.clients_activity.Clients_ViewDetailedProposal" />
+        <activity android:name=".modelsprofile.models_activity.Model_client_view_details" />
+        <activity android:name=".clientsprofile.clients_activity.TopFemaleModels" />
+        <activity android:name=".clientsprofile.clients_activity.TopMaleModels" />
+        <activity android:name=".Location_Avtivity" />
+        <activity android:name=".clientsprofile.clients_activity.Clients_EndContact" />
+        <activity android:name=".modelsprofile.models_activity.GalleryViewImageModel" />
+        <activity android:name=".modelsprofile.models_activity.Gender_Selection_radio" />
+        <activity android:name=".clientsprofile.clients_activity.JobTypeSelect_option" />
+        <activity android:name=".modelsprofile.models_activity.ExploreImageFullshow" />
+        <activity
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:name=".chatModule.calling_services.VoiceCallActivity"
+            android:launchMode="singleTop"
+            />
+        <activity android:name=".WebView_Youtube" />
+
+        <activity
+            android:name=".clientsprofile.clients_activity.Chat_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:name=".chatModule.CallActivity"
+            android:launchMode="singleTop" />
+
+        <service android:name=".chatModule.calling_services.videoService" android:enabled="true" />
+        <service android:name=".chatModule.calling_services.AudioService" android:enabled="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".chatModule.calling_services.VideoCallService"
+            android:enabled="true" />
+        <service
+            android:name="com.quickblox.messages.services.gcm.QBGcmPushInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.quickblox.messages.TYPE"
+            android:value="GCM" />
+        <meta-data
+            android:name="com.quickblox.messages.SENDER_ID"
+            android:value="@string/sender_id" />
+        <meta-data
+            android:name="com.quickblox.messages.QB_ENVIRONMENT"
+            android:value="DEVELOPMENT" />
+    </application>
+
+</manifest>

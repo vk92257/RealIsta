@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/progressbarcreate"
+        layout="@layout/progressbardesign"
+        android:visibility="gone"/>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:id="@+id/scrollcreate"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            fontPath="fonts/PTSerif-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiring Profile"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0.2dp"
+        android:background="@color/verylightgray2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        fontPath="fonts/OpenSans-Bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Contact details"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Please provide accurate information here."
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="3dp"
+                        app:cardPreventCornerOverlap="true">
+
+                        <TextView
+                            android:id="@+id/country"
+                            fontPath="fonts/librereg.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:drawableLeft="@drawable/ic_place"
+                            android:drawablePadding="17dp"
+                            android:drawableTint="@color/colorAccent"
+                            android:hint="Your Country"
+                            android:inputType="textPersonName"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/text_color_dark_grey"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="3dp"
+                        app:cardPreventCornerOverlap="true">
+
+                        <TextView
+                            android:id="@+id/state"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black"
+                            fontPath="fonts/librereg.ttf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:drawableLeft="@drawable/ic_map"
+                            android:drawablePadding="17dp"
+                            android:drawableTint="@color/colorAccent"
+                            android:hint="Your Current State"
+                            android:inputType="textPersonName"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/text_color_dark_grey"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="3dp"
+
+                        app:cardPreventCornerOverlap="true">
+
+                        <TextView
+                            android:id="@+id/city"
+                            fontPath="fonts/librereg.ttf"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:drawableLeft="@drawable/ic_building"
+                            android:drawablePadding="17dp"
+                            android:drawableTint="@color/colorAccent"
+                            android:hint="Your Current City"
+                            android:inputType="textPersonName"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/text_color_dark_grey"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="3dp"
+                        app:cardPreventCornerOverlap="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:background="@color/verylightgray2"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/male"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/colorAccent"
+                                android:gravity="center"
+                                android:onClick="portfoliomale"
+                                android:padding="10dp"
+                                android:text="Male"
+                                android:textColor="@android:color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/female"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="portfoliofemale"
+                                android:padding="10dp"
+                                android:text="Female"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        fontPath="fonts/OpenSans-Bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Profile Image"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/we_respect_the_real_profileimageclient"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/profile"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:onClick="pickprofilepic"
+                            android:src="@drawable/addiconhd"
+                            app:civ_border_color="@color/black"
+                            app:civ_border_width="7dp"
+                            app:civ_shadow="true"
+                            app:civ_shadow_color="@android:color/darker_gray"
+                            app:civ_shadow_radius="15" />
+
+                        <ImageView
+                            android:id="@+id/tick"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="end"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_instagram_verified_badge_png" />
+                    </FrameLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="60dp"
+                android:backgroundTint="@color/colorAccent"
+                android:drawableStart="@drawable/ic_add_box_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:onClick="createportfolio"
+                android:text="Lets get started"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+</RelativeLayout>

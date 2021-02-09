@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verylightgray3"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/title"
+            fontPath="fonts/gothambold.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select criteria"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/verylightgray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="gendermain"
+                android:orientation="horizontal">
+
+                <TextView
+                    fontPath="fonts/gothambold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Sort by Gender"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/dropdowngender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:rotation="90"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:tint="@color/green" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/genderll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/male"
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="@color/gray1"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/female"
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Female"
+                    android:textColor="@color/gray1"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/both"
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Both"
+                    android:textColor="@color/gray1"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:onClick="specialskillsmain"
+                android:orientation="horizontal">
+
+                <TextView
+                    fontPath="fonts/gothambold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Sort by Special skills"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/dropdownskills"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:rotation="0"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:tint="@color/green" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/malemodel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Male Model"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/femalemodel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Female Model"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/photography"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Photography"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/makeupartists"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Makeup Artist"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/hairstylist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Hair Stylist"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/wardrobepartner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Wardrobe Partner"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/closthingdesigner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Clothing designer"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/bikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Bikes"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/cars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Cars"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/stunts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Stunts"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/generalsports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="General Sports"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Acting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Acting"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Swimming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Swimming"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Singing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Singing"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Dancing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Dancing"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Comedy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Comedy"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Gymnast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Gymnast"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Action"
+                    android:textSize="15sp" />
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:onClick="ethnicmain"
+                android:orientation="horizontal">
+
+                <TextView
+                    fontPath="fonts/gothambold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Sort by Ethnic Appearance"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/dropdownethic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:rotation="0"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:tint="@color/green" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/ethnicrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/Indian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Indian"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Asian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Asian"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Southeast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Southeast asian"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Middle eastern"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/African"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="African American"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Caucasian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Caucasian"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Hispanic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Hispanic"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Mixed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Mixed race"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Africandescant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="African descent"
+                    android:textSize="15sp" />
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:onClick="bodymain"
+                android:orientation="horizontal">
+
+                <TextView
+                    fontPath="fonts/gothambold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Sort by Body type"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/dropdownbody"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:adjustViewBounds="true"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:rotation="0"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:tint="@color/green" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/bodyrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/Average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Average"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Slim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Slim"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Athletic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Athletic"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Muscular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Muscular"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Plus size"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Curvy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Curvy"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Tall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Tall"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Short"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:checked="false"
+                    android:text="Short"
+                    android:textSize="15sp" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

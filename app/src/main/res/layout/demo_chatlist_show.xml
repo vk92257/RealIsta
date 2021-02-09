@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatclick"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/userimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_profile" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        b k <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/timetxt"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                fontPath="fonts/Roboto-Bold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingLeft="@dimen/padding_10"
+                android:text="hey there "
+                android:textSize="16dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/lastmessage_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_10"
+                android:text="last read message"
+                android:textSize="11sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/imageholder"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/ic_image_placeh"
+                android:drawablePadding="@dimen/padding_10"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_10"
+                android:text="Photo"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_10"
+            android:text="9:00 am"
+            android:textSize="11sp"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/unreadnotfication_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/timetxt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:background="@drawable/notification_read_back"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

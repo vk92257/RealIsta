@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="2dp"
+        android:elevation="1dp"
+        android:weightSum="10">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:onClick="backbutton"
+            />
+        <LinearLayout
+            android:layout_marginStart="@dimen/padding_10"
+            android:id="@+id/user_chat_profile_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:paddingEnd="20dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profileimage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/boss"
+                app:civ_border="true"
+                app:civ_border_color="@color/blue"
+                app:civ_border_width="0.5dp"
+                app:civ_circle_color="@color/black"
+                app:civ_shadow="true" />
+
+            <TextView
+                android:id="@+id/title"
+                fontPath="fonts/gotham.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Person name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:elevation="0dp"
+                android:onClick="audiocall"
+                android:padding="7dp"
+                android:src="@drawable/ic_call"
+                app:tint="@color/black"
+
+
+                />
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:elevation="0dp"
+                android:onClick="videocall"
+                android:padding="10dp"
+                android:src="@drawable/ic_video_call"
+                app:tint="@color/black"
+               />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <RelativeLayout
+            android:id="@+id/loding_message_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/message_loading"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                app:lottie_rawRes="@raw/message_rolling"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message_loading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="loading message...."
+                />
+        </RelativeLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/messages_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:clickable="false"
+            android:clipToPadding="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:scrollbars="none"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="16dp"
+            android:smoothScrollbar="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_attachment_preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_chat_send_container"
+        android:background="@color/gray_light"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fileattachment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_attachment_preview_container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_chat_send_container"
+        android:background="@color/gray_light"
+        android:orientation="vertical"
+        tools:visibility="gone">
+
+        <com.example.myapplication.AttachmentPreviewAdapterView
+            android:id="@+id/adapter_attachment_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/chatmessage_input_box" />
+
+</LinearLayout>

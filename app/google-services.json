@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "525444315963",
+    "firebase_url": "https://street-casting-460d7.firebaseio.com",
+    "project_id": "street-casting-460d7",
+    "storage_bucket": "street-casting-460d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525444315963:android:b4bf8e4b782d6c1c1e551e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525444315963-no0oqm2r9i79ltuud5tf95hpo4r42bdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnx3uMtL6OsC99t3Xb02SgrZscOovc3e4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525444315963-no0oqm2r9i79ltuud5tf95hpo4r42bdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="25dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:onClick="back">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|start">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profileimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/boss"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="2dp"
+                app:civ_circle_color="@color/gray1"
+                app:civ_shadow="true" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/name"
+                fontPath="fonts/gotham.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_instagram_verified_badge_png"
+                android:drawablePadding="10dp"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="Full Name"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/professiontitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="Professional Title"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:onClick="viewprofile"
+                android:id="@+id/viewprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+                android:drawableTint="@color/green"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:text="View Profile"
+                android:textColor="@color/green"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/gallery_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:visibility="gone"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:paddingBottom="20dp"
+        android:scaleType="fitCenter" />
+
+</LinearLayout>
